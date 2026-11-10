@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facture de Consultation - Cabinet Médical</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            margin: 0;
+            padding: 30px;
+            display: flex;
+            justify-content: center;
+        }
+        .invoice-card {
+            width: 100%;
+            max-width: 600px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            overflow: hidden;
+            border-top: 5px solid #007bff;
+        }
+        .invoice-header {
+            padding: 20px 30px;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .invoice-header h2 {
+            margin: 0;
+            color: #007bff;
+            font-size: 22px;
+        }
+        .invoice-body {
+            padding: 20px 30px;
+        }
+        .info-group {
+            margin-bottom: 15px;
+        }
+        .info-group label {
+            font-weight: bold;
+            color: #555;
+            display: block;
+            margin-bottom: 3px;
+        }
+        .info-group span {
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #007bff;
+            color: white;
+        }
+        .total-row {
+            text-align: right;
+            font-size: 18px;
+            font-weight: bold;
+            color: #28a745;
+            margin-top: 15px;
+        }
+        .invoice-footer {
+            background-color: #f9f9f9;
+            text-align: center;
+            padding: 15px;
+            font-size: 13px;
+            color: #777;
+            border-top: 1px solid #eee;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="invoice-card">
+        <!-- Header -->
+        <div class="invoice-header">
+            <h2>Cabinet Médical Dr. Ben Salah</h2>
+            <div>
+                <p style="margin:0; font-size: 14px;"><strong>Facture N°:</strong> FAC-2026-89</p>
+                <p style="margin:0; font-size: 14px; color: #666;">Date: 10/11/2026</p>
+            </div>
+        </div>
+
+        <!-- Body -->
+        <div class="invoice-body">
+            <div class="info-group">
+                <label>Médecin Traitant :</label>
+                <span>Dr. Anis Ben Salah (Cardiologue / Médecin Généraliste)</span>
+            </div>
+
+            <div class="info-group">
+                <label>Patient(e) :</label>
+                <span>Maram Mestouri</span>
+            </div>
+
+            <!-- Table of services -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Acte Médical</th>
+                        <th>Quantité</th>
+                        <th>Prix (DT)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Consultation Médicale de Suivi</td>
+                        <td>1</td>
+                        <td>60.000 DT</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="total-row">
+                Total à payer : 60.000 DT
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="invoice-footer">
+            <p>Merci pour votre confiance - Cabinet MyClinic</p>
+        </div>
+    </div>
+
+</body>
+</html>
